@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.btn-register{
+    background-color: rgb(192, 184, 184);
+    padding: 7px 20px 7px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+}

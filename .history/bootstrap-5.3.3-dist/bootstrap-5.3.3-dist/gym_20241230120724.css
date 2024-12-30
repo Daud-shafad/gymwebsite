@@ -1,0 +1,617 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.btn-register{
+    background-color: rgb(252, 249, 249);
+    padding: 7px 20px 7px 20px;
+    border: 1px solid rgb(177, 171, 171);
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(204, 200, 200);
+    text-transform: capitalize;
+    transition: all 2s;
+}
+
+.btn-register:hover{
+   background-color: rgb(177, 171, 171);
+   color: rgb(252, 249, 249);
+   border: rgb(252, 249, 249);
+   letter-spacing: 2px;
+   box-shadow: 2px 1px 2px 2px;
+
+}
+
+#navbarSupportedContent:hover{
+    letter-spacing: 1px;
+    color: black;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+
+.main-section{
+    background: keyframes;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    animation: gymImages;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+ 
+}
+
+@keyframes gymImages{
+0% {background-image: url(Bgtop.jpg);
+}
+
+25% {
+    background-image: url(Trainer3.jpg);
+}
+
+50% {
+    background-image: url(Photoman2.jpg);
+}
+
+75% {
+    background-image: url(Gym9.jpg);
+}
+
+100% {
+    background-image: url(Trainer2.jpg);
+}
+}
+
+.main-section .p-man-bodybuilding{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 150px;
+    color: white;
+}
+
+.main-section .btn-open-1{
+    background-color: rgb(252, 249, 249);
+    color: rgb(177, 171, 171); 
+    border: 1px solid rgb(177, 171, 171);
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 5px 45px 5px 45px;
+    margin: -120px 50px 50px 610px;
+    vertical-align: top;
+    transition: all 2s;
+ }
+ 
+ .main-section .btn-open-1:hover{
+     background-color: rgb(177, 171, 171);
+     color: rgb(252, 249, 249);
+     border: rgb(252, 249, 249);
+     letter-spacing: 2px;
+     box-shadow: 2px 1px 2px 2px;
+ }
+
+.section-1{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    
+ }
+
+ .section-1 .p-our-team{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+ }
+ .section-1 .managers-part{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    
+ }
+
+ .section-1 .managers-part .part-1{
+    width: 300px;
+    height: 20vh;
+   
+    cursor: pointer
+ }
+
+ .section-1 .managers-part .part-1 .image-1-part{
+    width: 100px;
+    height: 20vh;
+   
+}
+
+.section-1 .managers-part .part-1 .info-1-part{
+    width: 200px;
+    height: 20vh;
+    margin-left: 100px;
+    margin-top: -120px;
+    
+}
+
+ .section-1 .managers-part .part-2{
+    width: 300px;
+    height: 20vh;
+  
+    cursor: pointer
+ }
+
+ .section-1 .managers-part .part-2 .image-2-part{
+    width: 100px;
+    height: 20vh;
+    
+}
+
+.section-1 .managers-part .part-2 .info-2-part{
+    width: 200px;
+    height: 20vh;
+    margin-left: 100px;
+    margin-top: -120px;
+  
+}
+
+ .section-1 .managers-part .part-3{
+    width: 300px;
+    height: 20vh;
+    
+    cursor: pointer
+ }
+
+ .section-1 .managers-part .part-3 .image-3-part{
+    width: 100px;
+    height: 20vh;
+    
+}
+
+.section-1 .managers-part .part-3 .info-3-part{
+    width: 200px;
+    height: 20vh;
+    margin-left: 100px;
+    margin-top: -120px;
+    
+}
+
+ .section-1 .managers-part .part-4{
+    width: 300px;
+    height: 20vh;
+   
+    cursor: pointer
+ }
+
+ .section-1 .managers-part .part-4 .image-4-part{
+    width: 100px;
+    height: 20vh;
+   
+}
+
+.section-1 .managers-part .part-4 .info-4-part{
+    width: 200px;
+    height: 20vh;
+    margin-left: 100px;
+    margin-top: -120px;
+   
+}
+
+.row-1{
+    width: 100%;
+    height: 85vh;
+    
+}
+
+.row-1 .col-1{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin: 50px 20px 20px 50px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: url(gymerman.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgb(153 151, 151);
+    transition: all 2s;
+}
+
+.row-1 .col-1:hover{
+    width: 303px;
+}
+
+.row-1 .col-2{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin: 50px 20px 20px 530px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: url(Cbum.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgb(153, 151, 151);
+    transition: all 2s;
+}
+
+.row-1 .col-2:hover{
+    width: 303px; 
+}
+
+.row-1 .col-3{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin: 50px 20px 20px 1000px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: url(Gym3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgb(153, 151, 151);
+    transition: all 2s;
+}
+
+.row-1 .col-3:hover{
+   width: 303px;
+}
+
+.section-2{
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 50vh;
+ 
+}
+
+.section-2 .row-2{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    margin-top: 70px;
+}
+
+.section-3{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    margin-top: 40px;
+    background: url(Gym6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.section-3 .btn-android{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(153, 151, 151);
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 7px 30px 7px 30px;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.section-3 .btn-android:hover{
+    background-color: white;
+    color: rgb(153 151, 151);
+    border: 1px solid rgb(153, 151, 151);
+}
+
+
+.section-3 .btn-ios{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    color:  rgb(153, 151, 151);
+    border:  1px solid rgb(153, 151, 151);
+    border-radius: 25px;
+    padding: 7px 30px 7px 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.section-3 .btn-ios:hover{
+    background-color: rgb(153, 151, 151);
+    color: white;
+    border: 1px solid white;
+}
+
+.section-4{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-top: 550px;
+   
+}
+
+.section-4 form{
+    margin-top: 20px;
+    background: url(gym14.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.section-4 form label{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+
+.section-5{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    margin-top: -40px;
+    
+}
+
+.section-5 .p-aura{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: -30px;
+    text-transform: capitalize;
+}
+
+.section-5 .all-quotes{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+    
+}
+
+.section-5 .all-quotes .quote-1{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+.section-5 .all-quotes .quote-1:hover{
+    box-shadow: 2px 2px 2px 2px rgb(153, 151, 151);
+}
+
+.section-5 .all-quotes .quote-2{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+.section-5 .all-quotes .quote-2:hover{
+    box-shadow: 2px 2px 2px 2px rgb(153, 151, 151);
+}
+
+.section-5 .all-quotes .quote-3{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+.section-5 .all-quotes .quote-3:hover{
+    box-shadow: 2px 2px 2px 2px rgb(153, 151, 151);
+}
+
+.section-5 .all-quotes .quote-4{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+.section-5 .all-quotes .quote-4:hover{
+    box-shadow: 2px 2px 2px 2px rgb(153, 151, 151);
+}
+
+.section-6{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    margin-top: 400px;
+}
+
+
+@media screen and (max-width: 768px)and (min-width: 476px){
+   .main-section{
+    width: 100%;
+    height: 300px;
+   } 
+
+   .main-section .p-man-bodybuilding{
+     visibility: none;
+     display: none;
+   }
+
+   .main-section .btn-open-1{
+    margin-top: 150px;
+    margin-left: 180px;
+   }
+
+   .section-1 .managers-part{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+   .row-1 .p-999{
+    margin-top: 380px;
+   }
+
+   .row-1 .col-1{
+     width: 150px;
+     height: 200px;
+     margin-top: 20px;
+     margin-left: 10px;
+   }
+
+   .row-1 .col-1:hover{
+    width: 150px;
+    height: 300px;
+   }
+
+   .row-1 .col-1 p{
+    margin-top: -120px;
+   }
+
+
+   .row-1 .col-2{
+    width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 170px;
+   }
+
+   .row-1 .col-2:hover{
+    width: 150px;
+    height: 300px;
+   }
+
+   .row-1 .col-2 p{
+    margin-top: -120px;
+   }
+
+
+   .row-1 .col-3{
+    width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 330px;
+   }
+
+   .row-1 .col-3:hover{
+    width: 150px;
+    height: 300px;
+   }
+
+   .row-1 .col-3 p{
+    margin-top: -120px;
+   }
+
+   .section-2{
+      margin-top: -180px;
+   }
+
+   .section-2 .row-2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+   }
+
+   .section-2 .row-2 .card-title{
+    margin-top: -90px;
+    margin-left: 100px;
+   }
+
+   .section-2 .row-2 .card-text{
+    margin-top: -5px;
+    margin-left: 100px;
+   }
+
+   .section-3{
+    margin-top: 200px;
+   }
+
+   .section-3 .p-000{
+    margin-top: -150px;
+    font-size: 30px;
+   }
+
+   .section-3 .btn-android{
+    margin-left: 30px;
+   }
+
+   .section-4{
+    margin-top: 650px;
+   }
+
+   .section-4 form .btn-sign{
+    margin-left: 300px;
+   }
+   
+
+   .section-5{
+    margin-top: 300px;
+   }
+
+   .section-5 .all-quotes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+
+   }
+
+   .section-6{
+    margin-top: 1350px;
+   }
+   
+
+}
+
+
+
+
+
+
+
