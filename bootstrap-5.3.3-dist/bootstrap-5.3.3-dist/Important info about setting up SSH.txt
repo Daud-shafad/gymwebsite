@@ -1,0 +1,90 @@
+Important info about setting up SSHKEY for your GitHub account and pushing them everything or every folder you need
+____________________________________________________________________________________________________________________
+
+step 1 : setup git username and email - before setting up SSH keys, make sure your git username and email are configured to match your GitHub account
+(git config --global user.name "your GitHub username")
+(git config --global user.email "your email linking to your GitHub/ your GitHub email")
+
+step 2: verify the configuration
+(git config --global --list)
+you should see your username and email listed
+
+step 3: sure! if you installed ssh key service writing
+(Get-WindowsCapability -Online | Where-Object {$_.Name -like 'OpenSSH.Client*'} and then run this command (ssh) if it shows you the command is not recognized install it, also if it is shows you usages of ssh but denies to start the service normal and automatically remove it and reinstall it, also if it doesn't denies you have to go the next steps of setting up the ssh key)
+
+step 4: removing ssh key by writing
+(Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0) in here if it denies you have to change it (OpenSSH.Service~~~~0.0.1.0) and then hit enter you will see a blue part of the screen shows you running by (00000) like this.
+
+step 5: re-install the service by writing
+(Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0) and then you will see it a blue part of the screen shos you running by (0000) like this and after this write (ssh) to ensure it.
+
+step 6: start the service  by writing
+(Start-Service ssh-agent)if it denies you have to automatically start by writing (Set-service -Name ssh-agent -StartupType Automatic) and then start again (Start-Service ssh-agent) and then verify if it is running by writing(Get-Service ssh-agent)
+
+step 7: generate ssh key by writing
+(ssh-keygen -t ed25519 -c "your email linked to your GitHub account") note: if you need ssh key version you have to write (ssh-keygen --version), also in here if it denies this command you have to completely copied from chatgpt or somewhere else you will got this command and then paste it automatically to your powershell or commandline you used, and then hit enter.
+
+step 8: when you hit enter you will see it a passphrase, so you have to options to leave it as ablank for a simplicity, or to add a password which makes another extra of security, remember this phrase if you write you will need it every time you use the ssh key and then also re-enter the passphrase
+
+
+step 9 : add the ssh key to the ssh agent by writing
+(ssh-add ~/.ssh/id_ed25519) if this succeeds you added your ssh key if it shows you no such file or directory, then verify if the key exists  writing (dir ~/.ssh) this will list all files in the ~/.ssh directory. look for files named (id_ed25519(private key)) and (id_ed25519.pub which means public key) if you see it these files it means the keys are exists, and proceed to the next steps, if you don't see the files, then the key wasn't generated successfully.
+
+
+step 10: copy your public ssh key by writing
+(Get-content ~/.ssh/id_ed25519.pub |Set-Clipboard) this copies the public key not the private key
+
+step 11: add the key to your GitHub account by following
+___open your GitHub and go to ssh key settings
+___click new ssh key
+___in the key field paste the key you just copied
+___ give it a title (like my new public ssh key)
+___and lastly click add ssh key
+
+
+step 11: test the ssh connection by writing
+(ssh -T git@github.com) if everything is set up correctly, you'll see it a message like (Hi username! you've successfully authenticated, but GitHub does not provide shell access)
+
+and after this push to your files to the GitHub
+
+step 12: navigate the directory you want to push the github, but you have to create a repository that you want to push to the GitHub firstly
+
+
+step 13:initialize by writing (git init)
+
+
+step 14: add your changes by writing (git add .)
+
+
+step 15: commit to your changes by writing (git commit -m "written about your project or folder or anything else")
+
+
+step 16: git remote add origin paste the repository link which is https
+
+
+step 17: git push origin master 
+
+
+important note: in recent versions of GitHub, the default branch is main instead of master. if you are seeing an error related to master not being found, you can check the default branch of your GitHub repository and adjust the push command
+(git push origin main)
+
+important note: 
+HTTPS
+how it works: when you push or pull from a repository using https, git prompts you to enter your GitHub username and password (or a personal access token if 2FA is enabled)
+advantages: simple to set up, works universally, even behind firewalls or proxies that block SSH
+disadvantages: you have to enter your credentials each time (unless you use a credential manager to store them), requires periodic re-authentication (e.g: when your token or password changes)
+
+SSH
+how it works: SSH uses an SSH key pair (private and public keys) to authenticate you git operations, so you don't need to enter your username and password every time you push or pull
+advantages: no need to enter credentials every time, more secure, as it uses encryption and key-based authentication, preferred for long term, frequent interactions with GitHub
+disadvantages: requires an initial setup of ssh keys, some network environments (like strick firewalls) may block ssh traffic
+
+WHICH ONE TO USE
+use https if you: prefer simplicity and don't mind entering your credentials occasionally (or using  a credential manager), are behind a strict firewall or proxy that blocks SSH.
+
+use SSH if you: want a more secure and seamless experience, prefer not to type your credentials every time you push or pull, are comfortable setting up SSH keys
+
+
+
+
+
